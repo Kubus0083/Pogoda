@@ -64,7 +64,7 @@ public class HelloApplication extends Application {
     private void getWeatherData(String cityName) {
         try {
 
-            String apiKey = "3bf4334cd21c77a55ac7eb3ce601961c";  // Podaj swój klucz API
+            String apiKey = "";  // Podaj swój klucz API
             String urlString = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey + "&lang=pl";
             URL url = new URL(urlString);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
